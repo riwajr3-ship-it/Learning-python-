@@ -1,18 +1,22 @@
 def main ():
     s = input("what sound do you wanna hear? ")
     sound = ["cat","dog","human"]
-    if name in sound :
-        print("meow/n" * 3, sep ="," )
-    elif name in sound :
-        print("wuaf/n"* 3, sep =",")
-    elif name in sound :
-        print("Hello/n"*3, sep =",")
+    name = name(s)
+    if name == "cat":
+        print("meow\n" * 3, sep ="," )
+    elif name == "dog":
+        print("wuaf\n"* 3, sep =",")
+    elif name == "human":
+        print("Hello\n"*3, sep =",")
 
 def name(n):
-    if n == list(str):
-        return True
+    if n == "cat":
+        return "cat"
+    elif n == "dog":
+        return "dog"
+    elif n == "human":
+        return "human"
     else:
-        return False
- 
+        return "unknown"
 
 main()
