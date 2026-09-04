@@ -1,7 +1,7 @@
 def main ():
     s = input("what sound do you wanna hear? ")
     sound = ["cat","dog","human"]
-    name = name(s)
+    name = animal_name(s)
     if name == "cat":
         print("meow\n" * 3, sep ="," )
     elif name == "dog":
@@ -9,7 +9,7 @@ def main ():
     elif name == "human":
         print("Hello\n"*3, sep =",")
 
-def name(n):
+def animal_name(n):
     if n == "cat":
         return "cat"
     elif n == "dog":
